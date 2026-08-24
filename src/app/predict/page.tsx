@@ -218,13 +218,13 @@ export default function PredictPage() {
           />
           
           {/* Modal */}
-          <div className="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-full p-6 z-10 max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-200">
+          <div className="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-full p-4 sm:p-6 z-10 max-h-[95vh] sm:max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-200">
             <div className="flex items-center justify-between border-b pb-3 mb-4">
               <h2 className="text-xl font-bold text-slate-800">Diagnostic Summary</h2>
-              <button onClick={closeModal} className="text-slate-400 hover:text-slate-600 text-xl font-bold">×</button>
+              <button onClick={closeModal} className="text-slate-400 hover:text-slate-600 text-xl font-bold cursor-pointer">×</button>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
               {/* Left Column: Radial Gauge & Text Result */}
               <div className="flex flex-col gap-4">
                 <RadialGauge probability={result.probability} />

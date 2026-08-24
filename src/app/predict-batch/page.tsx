@@ -217,7 +217,7 @@ export default function BatchPage() {
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}
             onClick={() => fileInputRef.current?.click()}
-            className={`border-2 border-dashed rounded-2xl p-8 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 ${
+            className={`border-2 border-dashed rounded-2xl p-6 sm:p-10 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 ${
               isDragging 
                 ? "border-teal-500 bg-teal-50/50" 
                 : "border-slate-300 hover:border-teal-400 hover:bg-slate-50/50"
